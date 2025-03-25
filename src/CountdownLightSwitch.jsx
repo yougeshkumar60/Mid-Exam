@@ -15,8 +15,7 @@ const startTimer = () =>{
     setTimeout(() => {
          setTimer(() => {
            setTimer(() => timer - 1)
-
-         }, )
+         },1000)
     })
 }
 
@@ -47,7 +46,7 @@ return (
       </div>
       <div class="timer" id="timerDisplay">30s</div>
       <div class="btn-group">
-      <h1 name="counter">0</h1>
+      <h1 name="counter">{timer}</h1>
         <button id="startButton" onClick={startTimer}>Start Timer</button>
         <button id="resetButton" style="display: none;">Reset Timer</button>
      
